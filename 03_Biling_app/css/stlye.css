@@ -1,0 +1,80 @@
+.box{
+    box-shadow: rgba(128, 125, 125, 0.35) 0px 5px 15px;
+}
+.box{
+    position: relative;
+}
+.item{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.form .input{
+    padding: 8px 2px;
+    margin: 10px 0;
+    border-radius: 5px ;
+    background: transparent;
+    border: 1px solid #666666;
+    color: #b6b6b6;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form .input:focus{
+    border: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+.form .input::placeholder{
+    color: #b6b6b6;
+}
+.form .btn{
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 5px;
+    /* background-color: #364779; */
+    cursor: pointer;
+    border: 2px solid #666666;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.form .btn:hover{
+    color: #fff;
+}
+.form .btn:{
+    color: #fff;
+}
+ul li {
+    padding: 10px 0;
+    color: #fff;
+}
+ul li.heading {
+    margin-bottom: 10px;
+}
+
+ul li.heading h3{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    width: 25%;
+}
+ul li p{
+    text-align: center;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+ul li:nth-child(even){
+    background: #1b1b1b;
+}
+ul li:nth-child(odd){
+    background: #363636;
+}
+.total{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+}

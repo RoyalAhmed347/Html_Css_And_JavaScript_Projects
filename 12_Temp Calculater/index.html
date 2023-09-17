@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Caluculater</title>
+    <link rel="stylesheet" href="css/stlye.css">
+</head>
+<body>
+    <form class="form" onsubmit="calculator(); return false">
+        <label class="tempHeading" for="">Please Enter temprature you'd link to convert</label>
+        <br />
+        <input type="number" name="tempNumber" id="tempNumber" value="0">
+        <select name="" id="tempType">
+            <option value="cle">°Celsius</option>
+            <option value="farn">°Fahrenheit</option>
+        </select>
+        <br />
+        <input id="submitBtn" type="submit" >
+        <br />
+        <span id="tempResult"></span>
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

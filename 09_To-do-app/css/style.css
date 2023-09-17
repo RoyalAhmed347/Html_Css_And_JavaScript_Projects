@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contener{
+    height: 100vh;
+    width: 100%;
+    background: #3397D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 60%;
+    height: 60vh;
+    background: #fff;
+    padding: 20px;
+    border-radius: 7px;
+
+}
+#box input{
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 7px;
+    outline: 0;
+}
+#todoItemsBox{
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 20px;
+    list-style: none;
+    overflow-y: scroll;
+    height: 80%;
+}
+#todoItemsBox li{
+    background: #2C3F51;
+    padding: 10px;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    user-select: none;
+}
+#todoItemsBox li i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.done{
+    text-decoration: line-through;
+    background: #95A5A6 !important;
+}

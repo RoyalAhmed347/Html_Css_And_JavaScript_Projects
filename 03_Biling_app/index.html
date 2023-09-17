@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stlye.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <div class="main container w-full h-screen bg-gray-950 flex justify-center items-center">
+    <div class="box w-10/12 min-h-4/6 bg-[#212529] p-2 rounded-3xl flex">
+            <div class="newDat w-4/12  h-full flex justify-center items-center">
+                <div  class="form p-8 " >
+                    <h1 class="item">Add New Item</h1>
+
+                    <input type="text" class="input" id="productName" placeholder="Product Name"><br>
+
+                    <input type="number" class="input" min="0" id="productPrice" placeholder="Product Price"><br>
+
+                    <input type="number" class="input" min="0" id="productQuantity" placeholder="Product Quantity"><br>
+
+                    <button class="btn" id="creatProductBtn">Creat</button>
+                    <button class="btn" id="resetBtn">Reset</button>
+
+                </div>
+            </div>
+            <div class="showData w-8/12 min-h-full pb-2 flex flex-col justify-center items-center">
+                <ul id="itemsList" class="mb-16 h-2/3 w-2/3 p-0 m-0">
+                    <li class="heading bg-black flex justify-around">
+                        <h3>Name</h3>
+                        <h3>Price</h3>
+                        <h3>Quantity</h3>
+                        <h3>Total</h3>
+                    </li>
+                    <!-- <li class="flex justify-around">
+                        <p>Coke</p>
+                        <p>150</p>
+                        <p>3</p>
+                        <p>550</p>
+                    </li>
+                    <li class="flex justify-around">
+                        <p>Lhore</p>
+                        <p>150</p>
+                        <p>3</p>
+                        <p>550</p>
+                    </li>
+                    <li class="flex justify-around">
+                        <p>Lhore</p>
+                        <p>150</p>
+                        <p>3</p>
+                        <p>550</p>
+                    </li> -->
+                </ul>
+                <h1 class="total">Total: <span id="totalPrice">00.0</span></h1>
+                
+            </div>
+
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
