@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav{
+    width: 100%;
+    background-color: goldenrod;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+.contener{
+    max-width: 1280px;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    align-items: center;
+    padding: 10px 50px; 
+
+}
+.navbar .brandname h1 a{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    color: #FFF;
+}
+.cart-icon a{
+    color: goldenrod;
+}
+.navbar .cart-icon{
+    width: 60px;
+    background-color: #fff;
+    display: flex;
+    color: goldenrod;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main_shop{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.item{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item img{
+    width: 100%;
+}
+.item .item_details h5{
+    font-size: 18px;
+    color: goldenrod;
+
+}
+.item .item_details .dis{
+    font-size: 15px;
+}
+.item .item_details .price{
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+}
+.item .item_details span{
+    color: goldenrod;
+}
+.item .item_details button{
+    width: 100%;
+    padding: 10px;
+    color: #FFF;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
+
+@media (max-width: 860px) {
+    .main_shop{
+        width: 100%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .main_shop{
+        width: 100%;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
